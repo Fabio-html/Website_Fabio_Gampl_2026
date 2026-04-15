@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+title: Home
+site:
+name: Fabio Gampl
+---
+
+        <section class="intro" id="top">
+            <div class="intro-video">
+                <video src="./assets/global/intro.mp4" autoplay muted loop playsinline preload="metadata"></video>
+            </div>
+        </section>
+
+
+        <section class="ticker">
+            <div class="ticker-track">
+                <div class="ticker-content">
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                </div>
+                <div class="ticker-content">
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    </div>
+            </div>
+        </section>
+
+            <section class="section projects" aria-label="Selected Projects">
+            <div class="container stack">
+                {% for project in collections.projects %}
+                {% include "partials/project-card.njk" %}
+                {% endfor %}
+            </div>
+            </section>
+
+            </div>
+        </section>
+
+        <section class="ticker">
+            <div class="ticker-track">
+                <div class="ticker-content">
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                </div>
+                <div class="ticker-content">
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                    <span>visual identities as structured, scalable systems for digital contexts</span>
+                    <span class="dot"> </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section endcap" aria-label="Contact">
+
+            <div class="center-block">
+                <div class="center-content">
+                    <h1>Want to work together?<br>I’d love to hear from you!</h1>
+                    <a class="getintouch" href="mailto:fabio@gampl.de">Get in touch</a>
+                </div>
+            </div>
+
+        </section>

@@ -1,0 +1,627 @@
+:root {
+  --pad: 15px;
+  --header-h: 60px;
+  --footer-h: 60px;
+
+  --bg: #f7f7f7;
+  --fg: #7d7d7d;
+  --red: #ff0000;
+  --muted: rgba(10, 10, 10, .6);
+  --line: rgba(10, 10, 10, .12);
+
+  /* Font Sizes */
+  --fs-title: 28pt;
+  --fs-sub: 10pt;
+  --fs-body: 10pt;
+
+  /* Optional: Line Heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+  /* Optional: Letter Spacing */
+  --ls-tight: -0.01em;
+  --ls-normal: 0;
+}
+
+.project-media--secondary {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .project-media--secondary {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  scrollbar-width: none;
+  font-family: "parabolica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  overflow: hidden;
+}
+
+h1 {
+  font-size: var(--fs-title);
+  margin: 0;
+  line-height: var(--lh-tight);
+  font-weight: 500;
+}
+
+a {
+  color: var(--fg);
+}
+
+/* ---------- Layout Shell ---------- */
+/* padding-top/bottom reserviert Platz für sticky header/footer */
+.site-main {
+  position: fixed;
+  top: var(--header-h);
+  bottom: var(--footer-h);
+  left: 0;
+  right: 0;
+  margin: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.site-main::-webkit-scrollbar {
+  display: none;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: var(--header-h);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 var(--pad);
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--fg);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  overflow: visible;
+
+}
+
+.nav a,
+.meta-label,
+.project-tag,
+.contact-link,
+.getintouch {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--fg);
+  margin-left: var(--pad);
+  font-size: var(--fs-sub);
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  transition: 0.2s ease;
+  text-transform: uppercase;
+}
+
+.project-tag {
+  margin: 0;
+}
+
+.meta-label,
+.contact-link {
+  margin-left: 0;
+}
+
+.getintouch {
+  color: var(--bg);
+  background-color: var(--fg);
+  margin: var(--pad);
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+
+/* ---------- Footer (sticky unten, ohne fixed) ---------- */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  height: var(--footer-h);
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+.footer-link {
+  color: var(--fg);
+  text-decoration: none;
+  opacity: .8;
+}
+
+.footer-link:hover {
+  opacity: 1;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 0 0;
+}
+
+.intro {
+  padding: 0;
+  font-size: var(--fs-title);
+}
+
+.intro-video {
+  height: calc(100dvh - var(--header-h) - var(--footer-h));
+  width: 100dvw;
+  margin-left: calc(50% - 50dvw);
+  margin-right: calc(50% - 50dvw);
+  overflow: hidden;
+}
+
+.intro-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discription {
+  margin: var(--pad);
+  line-height: var(--lh-tight);
+}
+
+/* .tricker-wrap {
+    padding: var(--pad);
+} */
+
+.ticker {
+  height: calc(var(--header-h) + 1px);
+  font-size: var(--fs-sub);
+  padding: var(--pad);
+  text-transform: uppercase;
+  overflow: hidden;
+  display: flex;
+  letter-spacing: 0.2px;
+  align-items: center;
+  white-space: nowrap;
+  border-top: 1px solid var(--line);
+}
+
+.ticker-track {
+  display: flex;
+  animation: ticker-scroll 20s linear infinite;
+}
+
+.trick-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 var(--pad);
+  width: 6px;
+  height: 6px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Project Stack ---------- */
+.stack {
+  display: grid;
+  gap: 0;
+  padding: 0;
+}
+
+.project-card,
+.center-block {
+  border-top: 1px solid var(--line);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  height: auto;
+
+  min-height: calc(100dvh - var(--header-h) - (2 * var(--footer-h)));
+  height: auto;
+}
+
+
+.project-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr;
+  text-decoration: none;
+  color: inherit;
+  padding: var(--pad);
+  gap: var(--pad);
+  height: 100%;
+
+  align-items: stretch;
+}
+
+.center-block {
+  padding-right: calc(var(--pad) * 17);
+  padding-left: calc(var(--pad) * 17);
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.center-content {
+  margin-bottom: var(--pad);
+}
+
+
+.author {
+  font-size: var(--fs-body);
+  margin: var(--pad);
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pad);
+  align-items: flex-start;
+  justify-content: flex-start;
+
+}
+
+
+.project-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: var(--fs-title);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  font-weight: 500;
+}
+
+.project-desc {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+}
+
+.project-media {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  border-radius: 2%;
+}
+
+.project-media img,
+.project-media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* ---------- Work ---------- */
+
+.work {
+  padding: 0;
+  /* damit es clean bleibt */
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: var(--pad);
+  row-gap: calc(var(--pad) * 2);
+
+  padding: var(--pad);
+  /* bündig zu Header/Footer */
+}
+
+/* Card */
+.work-card {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  gap: calc((var(--pad))/2);
+}
+
+/* Thumbnail */
+.work-thumb {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
+.work-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.work-meta {
+  display: flex;
+  gap: var(--pad);
+}
+
+.work-title {
+  margin: 0;
+  font-size: var(--fs-sub);
+  color: var(--fg);
+}
+
+.work-sub {
+  margin: 0;
+  font-size: var(--fs-body);
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+
+
+/* ---------- Project Detail ---------- */
+
+.project-head {
+  width: 100dvw;
+}
+
+.project-head-inner {
+  padding: var(--pad);
+  padding-bottom: calc(4 * (var(--pad)));
+}
+
+.project-h1 {
+  margin: 0 0 var(--pad);
+  font-size: var(--fs-title);
+  /* oder var(...) wenn du willst */
+  line-height: var(--lh-normal);
+  font-weight: 500;
+}
+
+.project-meta3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--pad);
+}
+
+
+.meta-text {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+}
+
+.project-gallery {
+  padding: 0;
+}
+
+.slide {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Full width media */
+.slide--full {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding-right: var(--pad);
+  padding-left: var(--pad);
+  padding-top: calc(var(--pad) / 2);
+  padding-bottom: calc(var(--pad) / 2);
+}
+
+.slide--full img,
+.slide--full video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.slide--double {
+  display: grid;
+  padding-right: var(--pad);
+  padding-left: var(--pad);
+  padding-top: calc(var(--pad) / 2);
+  padding-bottom: calc(var(--pad) / 2);
+  gap: var(--pad);
+  grid-template-columns: 1fr 1fr;
+}
+
+.slide--double figure {
+  overflow: hidden;
+  margin: 0;
+}
+
+.slide--double img,
+.slide--double video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.impressum {
+  margin: 0;
+  margin-right: 50dvw;
+  line-height: 1.4;
+  padding: var(--pad);
+  font-size: var(--fs-body);
+}
+
+/* ============================= */
+/* TABLET (max-width: 1024px)   */
+/* ============================= */
+@media (max-width: 1024px) {
+
+  :root {
+    --fs-title: 28pt;
+    --fs-sub: 13pt;
+    --fs-body: 13pt;
+  }
+
+  /* Project Stack: weniger Spalten */
+  .project-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .center-block {
+    padding-right: calc(var(--pad) * 3);
+    padding-left: calc(var(--pad) * 3);
+    padding-top: var(--pad);
+    padding-bottom: var(--pad);
+  }
+
+  .project-media:last-child {
+    display: none;
+    /* optional: nur 1 Bild */
+  }
+
+  .project-meta3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+.slide--double {
+  grid-template-columns: 1fr;
+}
+
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impressum {
+  margin: 0;
+  margin-right: 25dvw;
+}
+
+}
+
+/* ============================= */
+/* MOBILE (max-width: 768px)    */
+/* ============================= */
+@media (max-width: 767px) {
+
+
+    :root {
+    --fs-title: 23pt;
+    --fs-sub: 9pt;
+    --fs-body: 9pt;
+  }
+
+  /* Project Stack: alles untereinander */
+  .project-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .center-block {
+    padding-left: var(--pad);
+    padding-right: var(--pad);
+  }
+
+  /* Work Grid: 1 Spalte */
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Project Detail: Meta untereinander */
+  .project-meta3 {
+    grid-template-columns: 1fr;
+  }
+
+  .slide--full img,
+  .slide--full video,
+  .slide--double img,
+  .slide--double video {
+    height: auto;
+  }
+
+    .impressum {
+  margin: 0;
+  margin-right: 0;
+}
+
+
+}

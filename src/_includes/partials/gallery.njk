@@ -1,0 +1,32 @@
+{% for slide in gallery %}
+
+  {% if slide.layout == "full" %}
+    <figure class="slide slide--full">
+      {% if slide.type == "image" %}
+        <img src="{{ slide.src }}" alt="{{ slide.alt or '' }}">
+      {% elif slide.type == "video" %}
+        <video
+          src="{{ slide.src }}"
+          autoplay muted loop playsinline preload="metadata"
+          aria-label="{{ slide.label or 'Project video' }}"></video>
+      {% endif %}
+    </figure>
+
+  {% elif slide.layout == "double" %}
+    <div class="slide slide--double">
+      {% for item in slide.items %}
+        <figure>
+          {% if item.type == "image" %}
+            <img src="{{ item.src }}" alt="{{ item.alt or '' }}">
+          {% elif item.type == "video" %}
+            <video
+              src="{{ item.src }}"
+              autoplay muted loop playsinline preload="metadata"
+              aria-label="{{ item.label or 'Project video' }}"></video>
+          {% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+{% endfor %}

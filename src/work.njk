@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: Work
+permalink: /work/
+site:
+name: Fabio Gampl
+---
+
+<section class="section work" aria-label="All Projects">
+  <div class="container work-grid">
+    {% for project in collections.projects %}
+      {% include "partials/work-tile.njk" %}
+    {% endfor %}
+  </div>
+</section>

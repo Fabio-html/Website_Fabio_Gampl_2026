@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="project-head">
+  <div class="project-head-inner">
+    <h1 class="project-h1">{{ title }}</h1>
+
+    <div class="project-meta3">
+
+      <div class="meta-block">
+        <p class="meta-label">Starting Point</p>
+        <p class="meta-text">{{ detail.startingPoint }}</p>
+      </div>
+
+      <div class="meta-block">
+        <p class="meta-label">Outcome</p>
+        <p class="meta-text">{{ detail.outcome }}</p>
+      </div>
+
+      <div class="meta-block">
+        <p class="meta-label">Details</p>
+
+        <ul class="meta-list">
+          {% for c in detail.categories %}
+            <li>{{ c }}</li>
+          {% endfor %}
+
+          {% if detail.typeface %}
+            <li>Typeface: {{ detail.typeface }}</li>
+          {% endif %}
+
+          {% if year %}
+            <li>Year: {{ year }}</li>
+          {% endif %}
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="project-gallery" aria-label="Project gallery">
+  {% include "partials/gallery.njk" %}
+</section>

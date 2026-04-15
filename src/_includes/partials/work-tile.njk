@@ -1,0 +1,12 @@
+<a class="work-card" href="{{ project.url }}">
+  <div class="work-thumb">
+    <img
+      src="{{ project.data.media.secondaryImage }}"
+      alt="{{ project.data.media.secondaryAlt or project.data.title }}" />
+  </div>
+
+  <div class="work-meta">
+    <p class="work-title">{{ project.data.title }}</p>
+    <p class="work-sub">{{ project.data.tag }} · {{ project.data.year }}</p>
+  </div>
+</a>
