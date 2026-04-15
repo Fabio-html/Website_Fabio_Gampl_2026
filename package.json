@@ -4,6 +4,7 @@
   "main": "eleventy.js",
   "scripts": {
     "dev": "npx eleventy --serve",
+    "build": "npx eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
