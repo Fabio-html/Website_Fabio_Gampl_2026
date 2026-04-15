@@ -1,22 +1,17 @@
 {
-  "name": "portfolio_website",
+  "name": "website",
   "version": "1.0.0",
   "main": "eleventy.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy"
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
-  },
-  "dependencies": {
-    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
-    "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.3.1",
-    "node-fetch": "^2.6.1"
+    "@11ty/eleventy": "^3.1.2"
   }
 }
