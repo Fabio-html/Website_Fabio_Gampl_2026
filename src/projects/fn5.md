@@ -4,7 +4,7 @@ title: Floor Number 5
 slug: floornumber5
 tag: Visual Identity
 year: 2024
-description: "A concept-driven visual identity exploring the tension between structure and irregularity. Combining geometric precision with intuitive placement, the project reflects identity as something constructed, unstable and constantly in progress."
+description: "A visual identity for a fashion brand, exploring the tension between structure and irregularity."
 permalink: "/projects/{{ slug }}/"
 
 media:

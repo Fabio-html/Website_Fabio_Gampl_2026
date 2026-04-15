@@ -4,7 +4,7 @@ title: Dam Pulse Collective
 slug: dampulsecollective
 tag: Visual Identity
 year: 2025
-description: "Visual identity & logo design for an independent Amsterdam-based techno collective — logo, type selection, color system, and Instagram concept."
+description: "Visual identity & logo design for an independent Amsterdam-based techno collective."
 permalink: "/projects/{{ slug }}/"
 
 media:
