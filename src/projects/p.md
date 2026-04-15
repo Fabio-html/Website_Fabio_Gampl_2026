@@ -11,7 +11,7 @@ permalink: "/projects/{{ slug }}/"
 media:
   primaryVideo: "/assets/projects/p/intro.mp4"
   secondaryImage: "/assets/projects/p/post_01.jpg"
-  secondaryAlt: "DamPulse preview image"
+  secondaryAlt: "Prototype preview image"
 
 detail:
   startingPoint: "Prototype is conceived as a speculative record label for experimental sound studies. While  
