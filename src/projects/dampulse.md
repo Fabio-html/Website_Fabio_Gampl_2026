@@ -13,8 +13,8 @@ media:
   secondaryAlt: "DamPulse preview image"
 
 detail:
-  startingPoint: "Dam Pulse Collective is an independent techno collective based in Amsterdam, running events at underground venues. The challenge was to build an identity with a clear conceptual foundation — something that references where they come from without feeling like a city branding exercise. The result needed to hold up across digital touchpoints, primarily Instagram."
-  outcome: "The logo is anchored in the three crosses from Amsterdam's coat of arms, redrawn as a single continuous line that rises and falls like a waveform. The form reads as both a city reference and an audio signal without needing explanation. Red is the only color in the system, taken from the crest and applied across all touchpoints. The Instagram concept extends this logic: bold type, high contrast, and a consistent layout that treats every post as part of a larger visual unit."
+  startingPoint: "Dam Pulse Collective is an independent techno collective based in Amsterdam, running events at underground venues. The challenge was to build an identity with a clear conceptual foundation — something that references where they come from without feeling like a city branding. The result needed to hold up across digital touchpoints, primarily Instagram."
+  outcome: "The logo is anchored in the three crosses from Amsterdam's coat of arms, redrawn as a single continuous line that rises and falls like a waveform. The form reads as both a city reference and an audio signal. Red is the main color in the system, taken from the Amsterdam crest and applied across all touchpoints."
   typeface: "Neue Haas Grotesk"
   categories:
     - Logo

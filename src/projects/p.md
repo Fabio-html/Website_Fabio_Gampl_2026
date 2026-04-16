@@ -4,7 +4,7 @@ title: Prototype
 slug: Prototype
 tag: Visual Identity
 year: 2026
-description: "A speculative record label for experimental sound studies, built as a system-based visual identity."
+description: "A speculative record label / archive for experimental sound studies."
 permalink: "/projects/{{ slug }}/"
 
 media:
@@ -13,7 +13,7 @@ media:
   secondaryAlt: "Prototype preview image"
 
 detail:
-  startingPoint: "Prototype is conceived as a speculative record label for experimental sound studies. While  
+  startingPoint: "Prototype is a speculative record label for experimental sound studies. While  
 
     Individual releases are not treated as discrete outputs, but as positions within a larger structure, allowing the label to operate as an archive rather than a brand. This structure is articulated through a simple indexing logic (P//001, P//002, …), which organizes the work as a continuous sequence rather than a collection of separate entries.
 

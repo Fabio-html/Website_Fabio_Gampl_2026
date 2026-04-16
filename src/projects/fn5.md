@@ -13,8 +13,8 @@ media:
   secondaryAlt: "DamPulse preview image"
 
 detail:
-  startingPoint: "Floor No. 5 began as a university project exploring identity as something constructed, unstable and constantly in progress. The aim was to create a visual language that doesn’t feel fully resolved, but instead reflects how identity forms through a mix of structure and individual decisions. Rather than designing a purely clean system, the focus was on the tension between control and freedom."
-  outcome: "The result is a visual identity built on the interplay between structure and irregularity. Geometric elements create a clear, systematic foundation, while other components remain more intuitive and less constrained, introducing a subtle imbalance within the system. A reduced color palette and neutral sans-serif typography establish a technical, distant tone, shifting the focus from expression to structure. Rather than defining a fixed image, the identity operates as an open system — consistent in its logic, yet flexible in its application."
+  startingPoint: "Floor No. 5 began as a university project exploring identity as something constructed, unstable and constantly in progress. The aim was to create a visual language that reflects how identity forms through a mix of structure and individual decisions. Rather than designing a purely clean system, the focus was on the tension between control and freedom."
+  outcome: "The result is a visual identity built on the interplay between structure and irregularity. Geometric elements create a clear, systematic foundation, while other components remain more intuitive and less constrained. A reduced color palette and neutral sans-serif typography establish a technical, distant tone, shifting the focus from expression to structure. Rather than defining a fixed image, the identity operates as an open system — consistent in its logic, yet flexible in its application."
   typeface: "Neue Haas Grotesk"
   categories:
     - Visual Identity
