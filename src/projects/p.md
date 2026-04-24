@@ -58,6 +58,7 @@ gallery:
         src: "/assets/projects/p/phone_animation.mp4"
         alt: "Double video 02"
 
+
       
 
 ---
