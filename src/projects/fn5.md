@@ -37,7 +37,7 @@ gallery:
 
   - layout: full
     type: image
-    src: "/assets/projects/fn5/page_03.jpg"
+    src: "/assets/projects/fn5/page_01.jpg"
     alt: "Full image 01"
 
   - layout: double
