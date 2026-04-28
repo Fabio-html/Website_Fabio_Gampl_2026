@@ -4,7 +4,7 @@ title: Floor Number 5
 slug: floornumber5
 tag: Visual Identity
 year: 2024
-description: "A visual identity for a fashion brand, exploring the tension between structure and irregularity."
+description: "FN5 is a conceptual clothing brand inspired by in-between spaces. Not destinations we arrive at, but spaces we pass through every day without thinking about it. The brand exists in that same psychological space, attempting to convert this feeling into visual form."
 permalink: "/projects/{{ slug }}/"
 
 media:
