@@ -4,7 +4,7 @@ title: Floor Number 5
 slug: floornumber5
 tag: Visual Identity
 year: 2024
-description: "FN5 is a conceptual clothing brand inspired by in-between spaces. Not destinations we arrive at, but spaces we pass through every day without thinking about it. The brand exists in that same psychological space, attempting to convert this feeling into visual form."
+description: "FN5 is a conceptual clothing brand inspired by in-between spaces. Not destinations we arrive at, but spaces we pass through every day without thinking about it. These places are often optimized to be autopilot zones, which makes them memorable in a strange way. The brand exists in that same psychological space, attempting to convert this feeling into visual form."
 permalink: "/projects/{{ slug }}/"
 
 media:
@@ -14,7 +14,7 @@ media:
 
 detail:
   startingPoint: "FN5 is a conceptual clothing brand inspired by in-between spaces. Not destinations we arrive at, but spaces we pass through every day without thinking about it. These places are often optimized to be autopilot zones, which makes them memorable in a strange way. The brand exists in that same psychological space, attempting to convert this feeling into visual form."
-  outcome: "FN5's visual system combines geometric elements with disruption to reflect both the invisible infrastructure and transience of in-between spaces. The imagery reflects these in-between spaces like elevators, where fluorescent lighting and reflective surfaces create a clinical aesthetic. The Face of the model is never fully visible, which removes personalization and emphasizes the psychological state of moving through space without full individual presence. Desaturated blue (#2f54a1) as the primary color establishes an detached feeling. Used exclusively with grays, whites, blacks, and metallics. This restrained palette mirrors the color neutrality of real in-between environments, which are often functional but not emotional. The Sans-serif typography inspired by institutional signage reinforces this logic."
+  outcome: "FN5's visual system combines geometric elements with disruption to reflect both the invisible infrastructure and transience of in-between spaces. The imagery uses environments, such as elevators, where fluorescent lighting and reflective surfaces create a clinical aesthetic. The model's face is never fully visible, which removes personalization and emphasizes the psychological state of moving through space without a fully present individual. Desaturated blue (#2f54a1) as the primary color establishes a slightly detached feeling. Used exclusively with grays, whites, blacks, and metallics. This restrained palette mirrors the color neutrality of real in-between environments, which are often functional but not emotional. The Sans-serif typography inspired by institutional signage reinforces this logic."
   typeface: "Neue Haas Grotesk"
   categories:
     - Visual Identity
