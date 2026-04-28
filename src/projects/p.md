@@ -13,11 +13,7 @@ media:
   secondaryAlt: "Prototype preview image"
 
 detail:
-  startingPoint: "Prototype is a speculative record label for experimental sound studies. While  
-
-    Individual releases are not treated as discrete outputs, but as positions within a larger structure, allowing the label to operate as an archive rather than a brand. This structure is articulated through a simple indexing logic (P//001, P//002, …), which organizes the work as a continuous sequence rather than a collection of separate entries.
-
-    As the system expands, the archive remains in flux: each new release reconfigures the context of the existing ones, producing meaning through relation, accumulation, and temporal progression."
+  startingPoint: "Prototype is a speculative platform for experimental sound studies. The platform functions as an archive: Each new release gets an index built on top of the last release (P//001, P//002, …). By making this relationship explicit in the numbering, the platform embeds intellectual history into its infrastructure. So it's not just cataloging, but it implies relationships and cross-references. The visual system shouldn't try to represent what experimental sound is or feels like. Instead, it should establish a functional framework that centers the sound studies themselves."
   outcome: "The result is a modular visual system that differentiates between the overall structure and individual releases. Color acts as the primary layer of orientation:
     purple represents the system, while yellow marks individual sound studies.
     New releases visually exist between these two states, becoming part of the system as they are introduced.
