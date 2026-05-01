@@ -4,7 +4,7 @@ title: Prototype
 slug: Prototype
 tag: Visual Identity
 year: 2026
-description: "A speculative record label / archive for experimental sound studies."
+description: "A speculative platform for experimental sound studies."
 permalink: "/projects/{{ slug }}/"
 
 media:
