@@ -13,7 +13,7 @@ media:
   secondaryAlt: "Prototype preview image"
 
 detail:
-  startingPoint: "Prototype is a speculative platform for experimental sound studies. The platform functions as an archive: Each new release gets an index built on top of the last (P//001, P//002, …). By making this relationship explicit in the numbering, the platform embeds intellectual history into its infrastructure. The challenge was to create a visual system that doesn’t try to represent what experimental sound is or feels like. Instead, it should establish a functional framework that centers the sound studies themselves. In addition, the framework should be able to expand as the catalog grows without getting chaotic."
+  startingPoint: "Prototype is a speculative platform for experimental sound studies. The platform functions as an archive: Each new release gets an index built on top of the last (P//001, P//002, …). The challenge was to create a visual system that doesn’t try to represent what experimental sound is or feels like. Instead, it should establish a functional framework that centers the sound studies themselves. In addition, the framework should be able to expand as the catalog grows without getting chaotic."
   outcome: "The result is a visual system built on structural framework. Purple represents the system itself, yellow marks individual sound studies. Instead of decorative choices, the work and artist differentiate each release. The identity remains coherent across platforms while keeping sound as the primary focus "
   categories:
     - Logo
@@ -29,12 +29,13 @@ gallery:
 
   - layout: double
     items:
-      - type: video
-        src: "/assets/projects/p/animation.mp4"
-        label: "Double video 01"
       - type: image
         src: "/assets/projects/p/color.jpg"
         alt: "Double image 01"
+      - type: video
+        src: "/assets/projects/p/animation.mp4"
+        label: "Double video 01"
+
 
   - layout: full
     type: video
