@@ -14,8 +14,7 @@ media:
 
 detail:
   startingPoint: "FN5 is a conceptual clothing brand inspired by in-between spaces—elevators, hallways, waiting rooms. Designed to be forgotten, they become oddly memorable. The brand exists in that same psychological space, translating the feeling of transition into visual form."
-  outcome: "The brand identity combines geometric elements with disruption, reflecting the infrastructure and transience of in-between spaces. Fluorescent lighting and reflective surfaces create a clinical aesthetic. The model's obscured face removes personalization, emphasizing psychological passage over individual presence.
-    Desaturated blue (#2f54a1) paired with grays, whites, blacks, and metallics mirrors the functional neutrality of these environments. Sans-serif institutional typography reinforces the system."
+  outcome: "The result is a visual system built on structural framework. Purple represents the system itself, yellow marks individual sound studies. Instead of decorative choices, the work and artist differentiate each release. The identity remains coherent across platforms while keeping sound as the primary focus."
   typeface: "Neue Haas Grotesk"
   categories:
     - Visual Identity

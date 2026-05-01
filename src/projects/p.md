@@ -14,7 +14,7 @@ media:
 
 detail:
   startingPoint: "Prototype is a speculative platform for experimental sound studies. The platform functions as an archive: Each new release gets an index built on top of the last (P//001, P//002, …). By making this relationship explicit in the numbering, the platform embeds intellectual history into its infrastructure. The challenge was to create a visual system that doesn’t try to represent what experimental sound is or feels like. Instead, it should establish a functional framework that centers the sound studies themselves. In addition, the framework should be able to expand as the catalog grows without getting chaotic."
-  outcome: "The result is a visual system that uses a structural framework. The color functions as the primary layer of orientation: purple represents the system itself, while yellow marks individual sound studies. Instead of decorative design choices, the work and the artist are what differentiate releases. This strict system ensures the visual identity stays coherent across platforms while centering the sound as the primary focus. This logic is consistently applied across all touchpoints. Each application follows the same rules, allowing the identity to remain coherent while adapting to different formats. "
+  outcome: "The result is a visual system built on structural framework. Purple represents the system itself, yellow marks individual sound studies. Instead of decorative choices, the work and artist differentiate each release. The identity remains coherent across platforms while keeping sound as the primary focus "
   categories:
     - Logo
     - Type selection
