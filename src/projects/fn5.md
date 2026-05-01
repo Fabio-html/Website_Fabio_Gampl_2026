@@ -4,7 +4,7 @@ title: Floor Number 5
 slug: floornumber5
 tag: Visual Identity
 year: 2024
-description: "FN5 is a conceptual clothing brand inspired by in-between spaces. Not destinations we arrive at, but spaces we pass through every day without thinking about it. These places are often optimized to be autopilot zones, which makes them memorable in a strange way. The brand exists in that same psychological space, attempting to convert this feeling into visual form."
+description: "A conceptual clothing brand inspired by in-between spaces"
 permalink: "/projects/{{ slug }}/"
 
 media:
