@@ -18,8 +18,7 @@ detail:
   typeface: "Neue Haas Grotesk"
   categories:
     - Logo
-    - Type selection
-    - Color system
+    - Visual Identity
     - Social Media concept
 
 gallery:
