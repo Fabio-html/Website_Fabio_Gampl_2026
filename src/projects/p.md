@@ -19,7 +19,6 @@ detail:
   categories:
   - Modular archive
   - Color system
-  - Social media concept
   - Web layout
 
 gallery:
