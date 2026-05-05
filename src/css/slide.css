@@ -118,6 +118,13 @@ body::-webkit-scrollbar {
   object-fit: cover;
 }
 
+.rectangle-frame img {
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   :root {
     --square-size: min(82vw, 82vw);
