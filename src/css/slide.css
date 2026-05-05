@@ -101,8 +101,17 @@ body::-webkit-scrollbar {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.rectangle-frame {  
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .square-frame img,
-.square-frame video {
+.square-frame video,
+.rectangle-frame img {
   display: block;
   overflow: visible;
   width: 100%;
@@ -110,9 +119,9 @@ body::-webkit-scrollbar {
   object-fit: cover;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   :root {
     --square-size: min(82vw, 82vw);
     --panel-padding: 8vw;
   }
-} */
+}
