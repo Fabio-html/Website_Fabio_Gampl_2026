@@ -110,9 +110,9 @@ body::-webkit-scrollbar {
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   :root {
     --square-size: min(82vw, 82vw);
     --panel-padding: 8vw;
   }
-}
+} */
