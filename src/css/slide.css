@@ -121,6 +121,7 @@ body::-webkit-scrollbar {
 .rectangle-frame img {
   width: auto;
   height: auto;
+  max-height: var(--square-size);
   object-fit: contain;
   display: block;
 }
