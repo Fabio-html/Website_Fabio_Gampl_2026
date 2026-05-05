@@ -103,7 +103,7 @@ body::-webkit-scrollbar {
 
 .rectangle-frame {  
   max-height: var(--square-size);
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,8 +120,9 @@ body::-webkit-scrollbar {
 
 .rectangle-frame img {
   width: auto;
-  height: 100%;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 768px) {
