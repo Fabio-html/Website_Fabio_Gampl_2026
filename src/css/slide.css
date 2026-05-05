@@ -102,6 +102,8 @@ body::-webkit-scrollbar {
 }
 
 .rectangle-frame {  
+  max-height: var(--square-size);
+  width: 100%;
   overflow: visible;
   display: flex;
   align-items: center;
