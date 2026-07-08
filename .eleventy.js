@@ -1,4 +1,29 @@
+const fs = require("fs");
+const path = require("path");
+
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addShortcode("inlineSvg", (assetPath, options = {}) => {
+        const filePath = path.join("src", assetPath);
+        let content = fs.readFileSync(filePath, "utf8");
+        content = content.replace(/<\?xml[^?]*\?>\s*/i, "");
+        content = content.replace(/<defs>[\s\S]*?<\/defs>\s*/gi, "");
+        content = content.replace(/\s*class="cls-1"/g, "");
+
+        const viewBox = options.viewBox ?? content.match(/viewBox="([^"]+)"/)?.[1];
+        const attrs = {
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox,
+            ...options,
+        };
+        const attrString = Object.entries(attrs)
+            .filter(([, value]) => value != null && value !== "")
+            .map(([key, value]) => `${key}="${value}"`)
+            .join(" ");
+
+        const inner = content.replace(/^<svg[^>]*>/i, "").replace(/<\/svg>\s*$/i, "");
+        return `<svg ${attrString}>${inner}</svg>`;
+    });
+
     // Copy-through (keine Verarbeitung)
     eleventyConfig.addPassthroughCopy({ "src/css": "css" });
     eleventyConfig.addPassthroughCopy({ "src/js": "js" });
