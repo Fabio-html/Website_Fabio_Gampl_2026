@@ -6,7 +6,7 @@
   <title>Home</title>
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eer3cem.css" />
-  <link rel="icon" type="image/png" href="/assets/global/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/global/logo_falcon.svg" />
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -45,7 +45,7 @@
     
         <section class="intro" id="top">
             <div class="intro-video">
-                <video src="./assets/global/intro.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                <video src="./assets/global/intro.mp4" autoplay muted loop playsinline preload="metadata" fetchpriority="high"></video>
             </div>
         </section>
 
@@ -84,15 +84,20 @@
 
     <div class="project-media project-media--primary">
       <video
-        src="/assets/projects/p/intro.mp4"
-        autoplay muted loop playsinline preload="metadata"
+        data-src="/assets/projects/p/intro.mp4"
+        muted
+        loop
+        playsinline
+        preload="none"
         aria-label="Primary project video"></video>
     </div>
 
     <div class="project-media project-media--secondary">
       <img
         src="/assets/projects/p/post_01.jpg"
-        alt="Prototype preview image" />
+        alt="Prototype preview image"
+        loading="lazy"
+        decoding="async" />
     </div>
   </a>
 </article>
@@ -107,15 +112,20 @@
 
     <div class="project-media project-media--primary">
       <video
-        src="/assets/projects/dampulse/social_media_02.mp4"
-        autoplay muted loop playsinline preload="metadata"
+        data-src="/assets/projects/dampulse/social_media_02.mp4"
+        muted
+        loop
+        playsinline
+        preload="none"
         aria-label="Primary project video"></video>
     </div>
 
     <div class="project-media project-media--secondary">
       <img
         src="/assets/projects/dampulse/logo_02.jpg"
-        alt="DamPulse preview image" />
+        alt="DamPulse preview image"
+        loading="lazy"
+        decoding="async" />
     </div>
   </a>
 </article>
@@ -130,15 +140,20 @@
 
     <div class="project-media project-media--primary">
       <video
-        src="/assets/projects/fn5/video_03.mp4"
-        autoplay muted loop playsinline preload="metadata"
+        data-src="/assets/projects/fn5/video_03.mp4"
+        muted
+        loop
+        playsinline
+        preload="none"
         aria-label="Primary project video"></video>
     </div>
 
     <div class="project-media project-media--secondary">
       <img
         src="/assets/projects/fn5/logo.jpg"
-        alt="DamPulse preview image" />
+        alt="DamPulse preview image"
+        loading="lazy"
+        decoding="async" />
     </div>
   </a>
 </article>
@@ -189,6 +204,6 @@
         </div>
     </footer>
 
-  <script src="/js/main.js"></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

@@ -8,15 +8,20 @@
 
     <div class="project-media project-media--primary">
       <video
-        src="{{ project.data.media.primaryVideo }}"
-        autoplay muted loop playsinline preload="metadata"
+        data-src="{{ project.data.media.primaryVideo }}"
+        muted
+        loop
+        playsinline
+        preload="none"
         aria-label="Primary project video"></video>
     </div>
 
     <div class="project-media project-media--secondary">
       <img
         src="{{ project.data.media.secondaryImage }}"
-        alt="{{ project.data.media.secondaryAlt or project.data.title }}" />
+        alt="{{ project.data.media.secondaryAlt or project.data.title }}"
+        loading="lazy"
+        decoding="async" />
     </div>
   </a>
 </article>

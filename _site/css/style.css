@@ -87,6 +87,7 @@ a {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  transform: translateZ(0);
 }
 
 .site-main::-webkit-scrollbar {
@@ -218,6 +219,7 @@ a {
   margin-left: calc(50% - 50dvw);
   margin-right: calc(50% - 50dvw);
   overflow: hidden;
+  contain: layout style paint;
 }
 
 .intro-video video {
@@ -253,6 +255,7 @@ a {
 .ticker-track {
   display: flex;
   animation: ticker-scroll 20s linear infinite;
+  will-change: transform;
 }
 
 .trick-content {
@@ -297,6 +300,11 @@ a {
 
   min-height: calc(100dvh - var(--header-h) - (2 * var(--footer-h)));
   height: auto;
+}
+
+.project-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto calc(100dvh - var(--header-h) - (2 * var(--footer-h)));
 }
 
 
@@ -364,6 +372,7 @@ a {
   overflow: hidden;
   min-height: 0;
   border-radius: 2%;
+  contain: layout style paint;
 }
 
 .project-media img,
@@ -375,6 +384,8 @@ a {
   display: block;
   object-fit: cover;
   object-position: center;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 
