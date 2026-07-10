@@ -27,6 +27,7 @@ gallery:
     src: "/assets/projects/p/intro.mp4"
     alt: "Full video 01" 
 
+
   - layout: double
     items:
       - type: image

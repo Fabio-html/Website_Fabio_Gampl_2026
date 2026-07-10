@@ -304,7 +304,7 @@ a {
 
 .project-card {
   content-visibility: auto;
-  contain-intrinsic-size: auto calc(100dvh - var(--header-h) - (2 * var(--footer-h)));
+  contain-intrinsic-height: auto calc(100dvh - var(--header-h) - (2 * var(--footer-h)));
 }
 
 
