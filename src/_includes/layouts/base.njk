@@ -1,12 +1,55 @@
 <!doctype html>
-<html lang="{{ lang or 'de' }}">
+<html lang="{{ lang or 'en' }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title }}{% if title and site and site.name %} — {{ site.name }}{% endif %}</title>
+  {% if page.url == "/" %}
+  <title>{{ site.name }} — {{ site.tagline }}</title>
+  {% else %}
+  <title>{{ title }} — {{ site.name }}</title>
+  {% endif %}
+  <meta name="description" content="{{ description or site.description }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  {% if noindex %}<meta name="robots" content="noindex" />{% endif %}
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:title" content="{% if page.url == '/' %}{{ site.name }} — {{ site.tagline }}{% else %}{{ title }} — {{ site.name }}{% endif %}" />
+  <meta property="og:description" content="{{ description or site.description }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <link rel="stylesheet" href="/css/style.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eer3cem.css" />
   <link rel="icon" type="image/svg+xml" href="/assets/global/logo_falcon.svg" />
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "{{ site.name }}",
+        "url": "{{ site.url }}/"
+      },
+      {
+        "@type": "Person",
+        "name": "Fabio Gampl",
+        "url": "{{ site.url }}/",
+        "jobTitle": "Visual Designer",
+        "description": "{{ site.description }}",
+        "email": "mailto:fabio@gampl.de",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mainz",
+          "addressCountry": "DE"
+        },
+        "sameAs": [
+          "https://www.instagram.com/fabio_gampl/",
+          "https://x.com/fabio_gampl/"
+        ]
+      }
+    ]
+  }
+  </script>
+  {% endif %}
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -14,17 +57,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-55N5VL43');</script>
 <!-- End Google Tag Manager -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSMFENWR96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DSMFENWR96');
+  </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSMFENWR96"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DSMFENWR96');
-</script>
 
 <body>
 <!-- Google Tag Manager (noscript) -->

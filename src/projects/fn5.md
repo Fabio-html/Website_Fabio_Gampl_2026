@@ -4,6 +4,7 @@ title: Floor Number 5
 slug: floornumber5
 tag: Visual Identity
 year: 2024
+date: 2024-06-01
 description: "A conceptual clothing brand inspired by in-between spaces."
 permalink: "/projects/{{ slug }}/"
 

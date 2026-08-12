@@ -7,6 +7,13 @@
     </div>
 
     <div class="project-media project-media--primary">
+      {% if project.data.media.primaryImage %}
+      <img
+        src="{{ project.data.media.primaryImage }}"
+        alt="{{ project.data.media.primaryAlt or project.data.title }}"
+        loading="lazy"
+        decoding="async" />
+      {% else %}
       <video
         data-src="{{ project.data.media.primaryVideo }}"
         muted
@@ -14,6 +21,7 @@
         playsinline
         preload="none"
         aria-label="Primary project video"></video>
+      {% endif %}
     </div>
 
     <div class="project-media project-media--secondary">

@@ -4,12 +4,13 @@ title: Prototype
 slug: Prototype
 tag: Visual Identity
 year: 2026
+date: 2026-01-15
 description: "A speculative platform for experimental sound studies."
 permalink: "/projects/{{ slug }}/"
 
 media:
-  primaryVideo: "/assets/projects/p/intro.mp4"
-  secondaryImage: "/assets/projects/p/post_01.jpg"
+  primaryImage: "/assets/projects/p/cd.jpg"
+  secondaryImage: "/assets/projects/p/post_02.jpg"
   secondaryAlt: "Prototype preview image"
 
 detail:
@@ -23,8 +24,8 @@ detail:
 
 gallery:
   - layout: full
-    type: video
-    src: "/assets/projects/p/intro.mp4"
+    type: image
+    src: "/assets/projects/p/post_02.jpg"
     alt: "Full video 01" 
 
 

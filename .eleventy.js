@@ -32,10 +32,13 @@ module.exports = function (eleventyConfig) {
     // Collection: projects
     eleventyConfig.addCollection("projects", (collectionApi) => {
         return collectionApi.getFilteredByGlob("src/projects/*.md").sort((a, b) => {
-            // sort newest first (year desc). fallback 0
             const ay = Number(a.data.year || 0);
             const by = Number(b.data.year || 0);
-            return by - ay;
+            if (by !== ay) return by - ay;
+
+            const ad = new Date(a.data.date || `${ay || 0}-01-01`).getTime();
+            const bd = new Date(b.data.date || `${by || 0}-01-01`).getTime();
+            return bd - ad;
         });
     });
 

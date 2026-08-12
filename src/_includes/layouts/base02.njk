@@ -1,22 +1,25 @@
 <!doctype html>
-<html lang="{{ lang or 'de' }}">
+<html lang="{{ lang or 'en' }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title }}{% if title and site and site.name %} — {{ site.name }}{% endif %}</title>
+  <title>{{ title }} — {{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  {% if noindex %}<meta name="robots" content="noindex" />{% endif %}
   <link rel="stylesheet" href="/css/slide.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eer3cem.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/global/logo_falcon.svg" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSMFENWR96"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DSMFENWR96');
+  </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSMFENWR96"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DSMFENWR96');
-</script>
 
 <body>
 
