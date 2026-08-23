@@ -71,7 +71,7 @@ gallery:
   - layout: full
     type: image
     src: "/assets/projects/telic/brandguidelines_02.jpg"
-    alt: "Full image 06"
+    alt: "Full image 05"
 
 
 ---
